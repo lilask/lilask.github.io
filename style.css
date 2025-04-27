@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*background-image: url("path/to/your/image.jpg");
+    background-repeat: repeat;
+    background-size: auto;*/
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.problem-box {
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.problem-box h2 {
+    margin-top: 0;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.problem-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.problem-box li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* FAQ Styles */
+.faq {
+    margin-top: 40px;
+    text-align: left;
+    padding: 20px;
+}
+
+.faq h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.faq-description {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: #f9f9f9;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.faq-answer {
+    padding: 12px;
+    background-color: #fff;
+    display: none; /* Hide answers by default */
+}
+
+.faq-toggle {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* Expand Icon */
+.faq-toggle:focus {
+    outline: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block; /* Show answer when the item is active */
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg); /* Animate the plus sign */
+    background-color: #e74c3c; /* Red for the minus sign */
+}
